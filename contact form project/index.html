@@ -42,16 +42,18 @@
             <div id="radio-buttons">
                 <h2>Q5. This is a radio button (Please choose one option)</h2>
                 <label for="Op1">
-                    <input id="Op1" type="radio" name="radio">Option 1
+                    <input id="Op1" type="radio" name="option" value="1">Option 1
                 </label><br>
 
                 <label for="Op2">
-                    <input id="Op2" type="radio" name="radio">Option 2
+                    <input id="Op2" type="radio" name="option"value="2">Option 2
                 </label><br>
 
                 <label for="Op3">
-                    <input id="Op3" type="radio" name="radio">Option 3
+                    <input id="Op3" type="radio" name="option" value="3">Option 3
                 </label>
+
+
             </div>
 
             <div id="checkboxOps">
@@ -81,10 +83,14 @@
                 </label>
             </div>
 
-            <label for="comment"> 
+            <label for="text-comment">
                 <h2>Q7. Additional Information</h2>
-                <input type="text" id="comment" placeholder="  Please use this box to give additional information.">
+            <textarea id="text-comment" maxlength="500" placeholder="Please enter any additional information here.">
+                <!-- For some reason the placeholder text does not work-->
+            </textarea>
             </label><br>
+
+
             <button type="submit" value="send data" id="submit">Submit</button>
         </form>
 <p id="terms">By submitting this form you agree to all the terms and conditions which can think of. Terms and conditions can be changed or amended without prior concent. A copy of the terms and conditions is NOT available on request.</p>
